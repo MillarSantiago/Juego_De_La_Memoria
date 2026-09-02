@@ -1,0 +1,108 @@
+/* estilo principales */
+body{
+    font-family: arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0B0F19;
+}
+
+h1{
+     color: #00F2FE;
+    text-shadow: 0 0 10px #00F2FE;
+    margin-bottom: 20px;
+    transform: translateY(-40px);
+}
+
+p{
+    color: #00F2FE;
+    text-shadow: 0 0 10px #00F2FE;
+    margin-bottom: 20px;
+}
+
+.game-container{
+text-align: center;
+}
+
+/*tablero de 4 x 4*/
+.board{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 620px;
+    border: 4px solid #8853a7;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #0b0f19d7;
+    box-shadow: 0 0 20px 5px rgb(39, 91, 139);
+}
+
+/*cartas*/
+.card{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000000;
+}
+
+/*estilo para la imagen dentro de la carta  */
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*la carta volteada o parte tracera*/
+.card.flipped{
+    background-color: aquamarine;
+}
+
+
+.hidden{
+    background-color: brown;
+    cursor: default;
+}
+
+/*boton de reinicio*/
+#reset-button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff007f;
+    color: white;
+    border: black solid 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*estilo al boton*/
+#reset-button:hover{
+    background-color: #ff0080c9
+}
+
+/*boton de reiniciar puntaje*/
+#clean-score-button{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    border: black solid 2px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/*estilo al boton*/
+#clean-score-button:hover{
+    background-color: #c0392b
+}
